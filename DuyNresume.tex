@@ -1,0 +1,235 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Duy Nguyen} \\ \vspace{1pt}
+     \href{mailto:dnguyen122003@gmail.com}{\underline{dnguyen122003@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/duy---nguyen}{\underline{linkedin.com/in/duy---nguyen/}} $|$
+    \href{https://github.com/jerry-ng2}{\underline{github.com/jerry-ng2}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Massachusetts - Lowell | Lowell, MA}{Aug. 2022 - May 2026}
+      {Bachelor of Science in Computer Science with a focus in Data Science}{Aug. 2022 -- May 2026}
+      \small{\item{
+    {Bachelor of Science in Computer Science with a focus in Data Science, Math Minor}}}
+
+    \small{\item{
+    \textbf{Academic Achievements}{: Dean's list: 2022-2024, UML Faculty and Staff Scholarship, UML Powerlifting Club Member}}}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, JavaScript, HTML/CSS, XML, SQL, YML} \\
+     \textbf{OS/Applications}{: ExpressJS, PostgreSQL, ReactJS, NodeJS, Fedora, Ubuntu, Windows, MacOS, PyTorch, TensorFlow, Apache Spark, Hadoop, Ansible} \\
+     \textbf{Developer Tools}{: GCC, GDB, Git, Github, Make, Valgrind, VS Code, Visual Studio, VIM} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experiences}
+  \resumeSubHeadingListStart
+
+      \resumeSubheading
+      {A\&R Intern - indify $|$ \textit{New York, NY}}
+      { June 2024 - September 2024}
+      {indify}{New York , NY}
+    \resumeItemListStart
+        \resumeItem{Facilitate artist discovery via manipulating social algorithms to identify artists with traction.}
+        \resumeItem{Organized meetings between artists, management, and team members, building relationships that led to 10+ successful partnerships.}
+        \resumeItem{Help source 200+ artists as potential clients and created database entries that contained info of each artists.}
+        \resumeItem{Increased independent artists funding and strategic value by 20\%.}
+        \resumeItem{Created meaningful relationships with clients to understand what resources they need to scale their businesses.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Lab Assistant/Tutor - UML $|$ \textit{Lowell, MA}}{August 2022 -- Present}
+      {UMASS Lowell - Miner School of CIS}{Lowell, MA}
+      \resumeItemListStart
+        \resumeItem{Developed images for UMASS Lowell computer labs of 30+ machines using FOG and Clonezilla reducing deployment time by 40\%.}
+        \resumeItem{Automated lab management tasks with Ansible Playbook, decreasing manual lab changes by 50\%.}
+        \resumeItem{Managed multiple computer labs for students and faculty to use for work, research, etc.}
+        \resumeItem{Tutored 50+ students, helping them excel in introductory computer science courses.}
+        \resumeItem{Collaborated in seeting up and managing data servers for UMASS Lowell.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+    {Freelance Web Developer - Contract Based $|$ \textit{Lowell, MA}}{November 2023 - May 2024}
+    {Project Based Contract}{Lowell, MA}
+    \resumeItemListStart
+        \resumeItem{Conversion of DOS based application to Web UI.}
+        \resumeItem{Developed a RESTful API using ExpressJS to create  queries into a PostgreSQL database.}
+        \resumeItem{Utilized React to develop the apps in HTML/CSS and JavaScript.}
+        \resumeItem{Implement security features to the development app.}
+        
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Machine Learning} $|$  \textbf{Researcher} $|$ \emph{Apache Spark, Hadoop, PySpark, Jupyter Notebook}}
+          {}
+          \resumeItemListStart
+            \resumeItem{Researched how machine learning frameworks function.}
+            \resumeItem{Created a Hadoop cluster of 30 machines.}
+            \resumeItem{Tested the cluster using MapReduced python and java programs.}
+            \resumeItem{Implemented Apache Spark to distribute work load amongst various machines.}
+            \resumeItem{Experimented with panda dataframes to optimize the training time of preexisting models.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Customer Info Website} $|$ \textbf{Full Stack Engineer} $|$ \emph{PostgrSQL, Express.js, React.js, Node.js, JavaScript}}{}
+            \resumeItemListStart
+                \resumeItem{Created a website that is able to query customer information into a database.}
+                \resumeItem{Hid the database behind a login page using bcrypt encryption.}
+                \resumeItem{Created multiple databases to store different data and login information.}
+                \resumeItem{Implemented Express.js as a RESTful API as a backend.}
+            \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{CS Account Form} $|$  \textbf{Web Developer} $|$ \emph{Firebase, HTML/CSS, React, Python, Flask}}{}
+          \resumeItemListStart
+            \resumeItem{Worked with a team to develop a full-stack sign up form.}
+            \resumeItem{Implemented Flask serving as a REST API with React as the frontend.}
+            \resumeItem{Implemented Firebase to store user responses and keep track of user's data.}
+            \resumeItem{Worked with a team to deploy the web application using NGINX.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+\end{document}
